@@ -26,10 +26,25 @@ export const startAddExpense = (expenseData = {}) => {
     };
 };
 
-export const removeExpense = ({ id }) => ({
+export const removeExpense = ({ id } = {}) => ({
     type: 'REMOVE_EXPENSE',
     id
 });
+
+//1.create startRemoveExpense 9same call signature as removeExpense)
+//2.Test startRemoveExpense with "should remove expenses from firebase"
+//3.Use startRemoveExpense in EditExpensePage instead of removeExpense
+//4.Adjust EditExpensePage tests
+export const startRemoveExpense = ({ id } = {}) => {
+    return dispatch => {
+        return database
+            .ref(`expenses/${id}`)
+            .remove()
+            .then(() => {
+                dispatch(removeExpense({ id }));
+            });
+    };
+};
 
 export const editExpense = (id, updates) => ({
     type: 'EDIT_EXPENSE',
