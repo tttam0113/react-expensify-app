@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseRemoveConfirmation correctly 1`] = `
+<Modal
+  ariaHideApp={false}
+  bodyOpenClassName="ReactModal__Body--open"
+  className="modal"
+  closeTimeoutMS={200}
+  contentLabel="Remove Expense"
+  isOpen={true}
+  onRequestClose={[MockFunction]}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  role="dialog"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <h2
+    className="modal__title"
+  >
+    Are you sure want to remove this expense?
+  </h2>
+  <div
+    className="modal__body"
+  >
+    <div>
+      <h3
+        className="list-item__title"
+      >
+        Credit Card
+      </h3>
+      <span
+        className="list-item__sub-title"
+      >
+        January 5th, 1970
+      </span>
+    </div>
+    <h3
+      className="list-item__data"
+    >
+      $45.00
+    </h3>
+  </div>
+  <div
+    className="modal__actions"
+  >
+    <button
+      className="button"
+      onClick={[MockFunction]}
+    >
+      No
+    </button>
+    <button
+      className="button button--alert"
+      onClick={[MockFunction]}
+    >
+      Yes
+    </button>
+  </div>
+</Modal>
+`;
