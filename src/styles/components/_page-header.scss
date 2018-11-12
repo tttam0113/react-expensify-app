@@ -16,3 +16,8 @@
         font-weight: 700;
     }
 }
+
+.page-header__subtitle {
+    @extend .page-header__title;
+    font-style: italic;
+}
