@@ -22,6 +22,110 @@ exports[`should correctly render ExpensesSummary with 1 expense 1`] = `
         $2.35
       </span>
     </h1>
+    <h3
+      className="page-header__subtitle"
+    >
+      Hidden 
+      <span>
+        0
+      </span>
+       
+      expenses
+    </h3>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should correctly render ExpensesSummary with 1 hidden expense 1`] = `
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        1
+      </span>
+       
+      expense
+       totalling
+       
+      <span>
+        $2.35
+      </span>
+    </h1>
+    <h3
+      className="page-header__subtitle"
+    >
+      Hidden 
+      <span>
+        1
+      </span>
+       
+      expense
+    </h3>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should correctly render ExpensesSummary with multi hidden expenses 1`] = `
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        1
+      </span>
+       
+      expense
+       totalling
+       
+      <span>
+        $2.35
+      </span>
+    </h1>
+    <h3
+      className="page-header__subtitle"
+    >
+      Hidden 
+      <span>
+        123
+      </span>
+       
+      expenses
+    </h3>
     <div
       className="page-header__actions"
     >
@@ -59,6 +163,16 @@ exports[`should correctly render ExpensesSummary with multiple expenses 1`] = `
         $235,123,124.51
       </span>
     </h1>
+    <h3
+      className="page-header__subtitle"
+    >
+      Hidden 
+      <span>
+        0
+      </span>
+       
+      expenses
+    </h3>
     <div
       className="page-header__actions"
     >

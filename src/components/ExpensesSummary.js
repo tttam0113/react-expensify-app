@@ -6,7 +6,7 @@ import numeral from 'numeral';
 import selectExpenses from '../selectors/expenses';
 import selectExpensesTotal from '../selectors/expenses-total';
 
-export const ExpensesSummary = ({ expenseCount, expensesTotal, hiddenExpenseCount }) => {
+export const ExpensesSummary = ({ expenseCount, expensesTotal, hiddenExpenseCount = 0 }) => {
     const expenseWord = expenseCount === 1 ? 'expense' : 'expenses';
     const hiddenExpenseWord = hiddenExpenseCount === 1 ? 'expense' : 'expenses';
     const formattedExpensesTotal = numeral(expensesTotal / 100).format(
@@ -36,7 +36,6 @@ const mapStateToProps = state => {
         expenseCount: visibleExpenses.length,
         expensesTotal: selectExpensesTotal(visibleExpenses),
         hiddenExpenseCount: state.expenses.length - visibleExpenses.length
-
     };
 };
 
